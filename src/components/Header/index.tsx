@@ -1,10 +1,17 @@
 import './styles.css';
+import Image from 'next/image'
 
 const Header = () => {
     return (
         <>
-            <header>
-                <p>Aqui vai o header</p>
+            <header className="header">
+                <Image 
+                    src ="/movie.ico"
+                    width={100}
+                    height={100}
+                    alt = "Icone de filme"
+                />
+                <h1>Os melhores filmes estão aqui!</h1>
             </header>
         </>
     )
